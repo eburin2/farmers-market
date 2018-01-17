@@ -9,6 +9,11 @@ function Header(){
   };
   return (
     <div style={myStyles}>
+      <style jsx>{`
+          h1 {
+            color: blue;
+          }
+      `}</style>
       <h1>Farmer's Market</h1>
     </div>
   );
