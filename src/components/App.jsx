@@ -1,12 +1,23 @@
 import React from 'react';
 import Header from './Header';
-import TicketList from './TicketList';
+import MarketSchedule from './MarketSchedule';
+import ItemList from './ItemList';
 
 function App(){
+  const myStyles = {
+    boxSizing: 'border-box',
+    margin: '0',
+    padding: '0',
+    backgroundColor: 'red',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  };
   return(
-    <div>
+    <div style={myStyles}>
       <Header/>
-      <TicketList />
+      <MarketSchedule />
+      <ItemList />
     </div>
   );
 }
