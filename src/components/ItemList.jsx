@@ -273,9 +273,24 @@ const availableProduce = [
 
 function ItemList() {
 
+  const styles = {
+    divStyles: {
+      width: '100vw',
+      display: 'flex',
+      flexDirection: 'column',
+      backgroundColor: 'white',
+      alignItems: 'center'
+    },
+    itemHeader: {
+      textAlign: 'center',
+      fontSize: '50px',
+      fontFamily: 'courier',
+    }
+  }
+
   return(
-    <div>
-      <p>Available Produce</p>
+    <div style={styles.divStyles}>
+      <p style={styles.itemHeader}>Available Produce</p>
       <hr/>
       {availableProduce.map((item, index) =>
         <Item month={item.month}

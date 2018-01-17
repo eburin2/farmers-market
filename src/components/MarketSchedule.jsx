@@ -42,7 +42,7 @@ const masterMarketSchedule = [
 
 function MarketSchedule(){
   const myStyledComponentStyles={
-    backgroundColor: 'salmon',
+    backgroundColor: '#1c1b1b',
     fontFamily: 'monospace',
     fontSize: '24px',
     display: 'flex',

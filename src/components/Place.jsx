@@ -4,8 +4,10 @@ import PropTypes from 'prop-types';
 function Place(props){
   const myStyles = {
     width: '200px',
-    border: '1px solid navy',
-    margin: '5px'
+    margin: '10px',
+    borderRadius: '3px',
+    color: 'white',
+    textAlign: 'center'
   };
   return(
     <div style={myStyles}>
