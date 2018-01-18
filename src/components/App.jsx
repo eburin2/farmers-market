@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './Header';
 import MarketSchedule from './MarketSchedule';
 import ItemList from './ItemList';
+import { Switch, Route } from 'react-router-dom';
+import DayList from './DayList';
 
 function App(){
   const myStyles = {
@@ -13,10 +15,15 @@ function App(){
     flexDirection: 'column',
     alignItems: 'center'
   };
+
   return(
+
     <div style={myStyles}>
       <Header/>
-      <MarketSchedule />
+      <Switch>
+        <Route path='/daylist' component={DayList} />
+        <Route exact path='/' component={MarketSchedule} />
+      </Switch>
       <ItemList />
     </div>
   );

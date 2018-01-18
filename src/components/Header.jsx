@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header(){
   const myStyles = {
@@ -7,6 +8,10 @@ function Header(){
     display: 'flex',
     justifyContent: 'center'
   };
+
+  const textWhite = {
+    color: 'white'
+  }
   return (
     <div style={myStyles}>
       <style jsx>{`
@@ -17,6 +22,10 @@ function Header(){
             text-transform: uppercase;
             letter-spacing: 5px;
 
+          }
+
+          Link {
+            color: white;
           }
 
           h1:hover {
@@ -37,6 +46,9 @@ function Header(){
           }
       `}</style>
       <h1>Farmer's Market</h1>
+      <Link style={textWhite} to='/'>Market Schedule</Link>
+      <Link style={textWhite} to="/daylist">Day List</Link>
+
     </div>
   );
 }
